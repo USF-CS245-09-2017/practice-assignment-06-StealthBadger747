@@ -1,6 +1,5 @@
 import java.util.regex.*;
 
-
 public class Practice06Test {
 	
 	protected Queue<String> queue;
@@ -10,12 +9,10 @@ public class Practice06Test {
 	protected final String[] expressionList = {"level", "anna"};
 	protected final String[] wrongList = {"first", "Matter fact", "Landed on his hip and busted his lip"};
 	
-	
 	public Practice06Test() {
 		queue = new ArrayQueue<String>();
 		stack = new ArrayStack<String>();
 	}
-	
 	
 	public void clearData() {
 		while (!queue.empty()) {
@@ -25,7 +22,6 @@ public class Practice06Test {
 			stack.pop();
 		}
 	}
-	
 	
 	public boolean isPalindrome(String item) {
 		clearData();
